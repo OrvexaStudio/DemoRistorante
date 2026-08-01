@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Osteria Vento di Mare</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#faf8f3;
+    color:#222;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4")
+    center/cover;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:65px;
+    letter-spacing:2px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#d88b35;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+
+section{
+    padding:80px 10%;
+}
+
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:40px;
+}
+
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.7;
+}
+
+
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px #0001;
+}
+
+
+.card h3{
+    color:#d88b35;
+    margin-bottom:15px;
+}
+
+
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+
+
+.review{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    margin:15px;
+    text-align:center;
+}
+
+
+
+.contact{
+    text-align:center;
+    background:#111;
+    color:white;
+}
+
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:white;
+    padding:18px 25px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+
+@media(max-width:600px){
+
+.hero h1{
+    font-size:40px;
+}
+
+section{
+    padding:60px 5%;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="hero">
+
+<h1>Osteria<br>Vento di Mare</h1>
+
+<p>Cucina mediterranea • Sapori autentici</p>
+
+<a class="btn" href="#prenota">
+Prenota un tavolo
+</a>
+
+</div>
+
+</header>
+
+
+
+<section>
+
+<div class="title">
+<h2>La nostra storia</h2>
+</div>
+
+
+<div class="about">
+
+Dal mare alla tavola.
+Una cucina che unisce tradizione pugliese
+e creatività moderna utilizzando solo ingredienti
+freschi e selezionati.
+
+</div>
+
+
+</section>
+
+
+
+<section>
+
+<div class="title">
+<h2>Il Menù</h2>
+</div>
+
+
+<div class="menu">
+
+
+<div class="card">
+
+<h3>Antipasti</h3>
+
+<p>
+Tartare di tonno<br>
+Burrata pugliese<br>
+Polpo croccante
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Primi</h3>
+
+<p>
+Linguine allo scoglio<br>
+Risotto gamberi e limone<br>
+Orecchiette pugliesi
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Secondi</h3>
+
+<p>
+Orata alla griglia<br>
+Frittura di mare<br>
+Tagliata mediterranea
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<div class="title">
+<h2>Galleria</h2>
+</div>
+
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0">
+
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f">
+
+</div>
+
+
+</section>
+
+
+
+
+<section>
+
+<div class="title">
+<h2>Recensioni</h2>
+</div>
+
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+"Locale fantastico, cucina incredibile e servizio impeccabile."
+
+</div>
+
+
+<div class="review">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+"Una delle migliori esperienze gastronomiche mai provate."
+
+</div>
+
+
+
+</section>
+
+
+
+
+<section class="contact" id="prenota">
+
+<h2>Prenota il tuo tavolo</h2>
+
+<br>
+
+<p>
+Via del Porto 25<br>
++39 333 0000000
+</p>
+
+
+<br>
+
+<a class="btn"
+href="https://wa.me/393330000000">
+
+Contattaci su WhatsApp
+
+</a>
+
+
+</section>
+
+
+
+<a class="whatsapp"
+href="https://wa.me/393330000000">
+
+WhatsApp
+
+</a>
+
+
+
+</body>
+</html>
